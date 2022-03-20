@@ -25,7 +25,7 @@ function Result() {
     <div>
       {isLoading && <p>Loading...</p>}
       <div>
-        <img src={image.message} alt="dog-image" className="fetched-image" />
+        <img src={image.message} alt="dog" className="fetched-image" />
       </div>
       <div className="d-flex flex-column align-items-center">
         <p>First Name</p>

@@ -1,3 +1,11 @@
 .middle-wrapper {
   background-color: #fff;
+  font-size: 70px;
+  text-align: center;
+  margin: 200px 0;
+  font-weight: 900;
+}
+
+.middle-wrapper:hover {
+  color: #35c144;
 }
