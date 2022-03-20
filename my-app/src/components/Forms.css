@@ -1,0 +1,24 @@
+.submit-button {
+  border-radius: 60px;
+  padding: 16px 32px;
+  border-width: 1px;
+  border-color: #fff;
+  background-color: #35c144;
+  font-size: 25px;
+  color: #fff;
+  width: 20%;
+}
+
+.submit-button:hover {
+  border-color: #000;
+  background-color: #fff;
+  color: #000;
+}
+
+.form-styling {
+  flex-wrap: wrap;
+  gap: 30px 40px;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  align-items: center;
+}

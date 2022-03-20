@@ -24,9 +24,6 @@ const Navigation = () => {
             <Nav.Item>
               <Nav.Link href="/result">Result</Nav.Link>
             </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href="/contact">Contact</Nav.Link>
-            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
