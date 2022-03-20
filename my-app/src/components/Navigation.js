@@ -8,7 +8,6 @@ const Navigation = () => {
   return (
     <div>
       <Navbar collapseOnSelect expand="lg">
-        {/* <Navbar.Brand>Veo</Navbar.Brand> */}
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav

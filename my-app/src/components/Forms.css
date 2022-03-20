@@ -6,7 +6,6 @@
   background-color: #35c144;
   font-size: 25px;
   color: #fff;
-  width: 20%;
 }
 
 .submit-button:hover {
@@ -21,4 +20,16 @@
   padding-top: 100px;
   padding-bottom: 80px;
   align-items: center;
+}
+
+.bb {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 600px) {
+  .bb {
+    flex-direction: column;
+  }
 }

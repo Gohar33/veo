@@ -14,6 +14,20 @@
   color: #35c144;
 }
 
+.link a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.icon a {
+  text-decoration: none;
+  color: #35c144;
+}
+
+.icon a:hover {
+  color: #fff;
+}
+
 @media only screen and (max-width: 720px) {
   .footer-mobile-direction {
     display: flex;

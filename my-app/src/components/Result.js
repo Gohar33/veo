@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import FormsList from "./FormsList";
+import Forms from "./Forms";
 import "./Result.css";
 
 const fetchAPI = () => {
@@ -10,6 +12,12 @@ const fetchAPI = () => {
 function Result() {
   const [image, setImage] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [contacts, updateContacts] = useState([]);
+
+  const addContact = (contactInfo) => {
+    updateContacts([...contacts, contactInfo]);
+  };
+  console.log(contacts);
 
   useEffect(() => {
     setIsLoading(true);
@@ -28,10 +36,7 @@ function Result() {
         <img src={image.message} alt="dog" className="fetched-image" />
       </div>
       <div className="d-flex flex-column align-items-center">
-        <p>First Name</p>
-        <p>Last Name</p>
-        <p>Email</p>
-        <p>Age</p>
+        <FormsList />
       </div>
     </div>
   );
