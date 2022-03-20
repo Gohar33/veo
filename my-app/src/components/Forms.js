@@ -17,7 +17,7 @@ export default function Forms({ addContact }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    navigate(`/result`, {
+    navigate(`/result/${contactInfo.surname}`, {
       state: {
         name: contactInfo.name,
         surname: contactInfo.surname,

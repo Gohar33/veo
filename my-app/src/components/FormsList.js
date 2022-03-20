@@ -5,7 +5,13 @@ import "./Forms.css";
 export default function FormList({ contacts }) {
   const { state } = useLocation();
   const { name, surname, email, birth } = state;
-  console.log("naaaame", name, surname, email, birth);
+
+  const date = new Date(birth);
+  const birthYear = date.getFullYear();
+  const today = new Date(Date.now());
+  const thisYear = today.getFullYear();
+  const age = thisYear - birthYear;
+
   return (
     <div>
       <div className="card">
@@ -20,7 +26,7 @@ export default function FormList({ contacts }) {
           <span>Email:</span> {email}
         </p>
         <p className="card-name">
-          <span>Birthday:</span> {birth}
+          <span>Age:</span> {age}
         </p>
       </div>
     </div>

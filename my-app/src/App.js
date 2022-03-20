@@ -11,7 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />}></Route>
           <Route path="/form" element={<FormPage />}></Route>
-          <Route path="/result" element={<ResultPage />}></Route>
+          <Route path="/result/:lastName" element={<ResultPage />}></Route>
         </Routes>
       </Router>
     </div>
