@@ -22,12 +22,10 @@
   align-items: center;
 }
 
-.bb {
-  display: flex;
-
-  justify-content: space-between;
+.card-name span {
+  color: #35c144;
+  font-weight: 800;
 }
-
 @media only screen and (max-width: 600px) {
   .bb {
     flex-direction: column;

@@ -35,7 +35,7 @@ function Result() {
       <div>
         <img src={image.message} alt="dog" className="fetched-image" />
       </div>
-      <div className="d-flex flex-column align-items-center">
+      <div className="d-flex flex-column align-items-center mb-5">
         <FormsList />
       </div>
     </div>
