@@ -1,5 +1,5 @@
 import Navigation from "./Navigation";
-import Forms from "./Forms";
+import Forms from "../containers/Forms";
 import Footer from "./Footer";
 
 export default function FormPage() {

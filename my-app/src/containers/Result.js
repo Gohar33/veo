@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import FormsList from "./FormsList";
-import Forms from "./Forms";
 import "./Result.css";
 
 const fetchAPI = () => {
@@ -36,7 +35,7 @@ function Result() {
         <img src={image.message} alt="dog" className="fetched-image" />
       </div>
       <div className="d-flex flex-column align-items-center mb-5">
-        <FormsList />
+        <FormsList addContact={addContact} />
       </div>
     </div>
   );

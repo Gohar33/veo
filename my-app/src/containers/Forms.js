@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+// import Button from "../stories/Button";
 import "./Forms.css";
 
-export default function Forms({ addContact }) {
+export default function Forms() {
   const navigate = useNavigate();
   const [contactInfo, setContactInfo] = useState({
     name: "",
@@ -41,11 +42,11 @@ export default function Forms({ addContact }) {
       <form
         action="/result"
         method="GET"
-        className="d-flex flex-column m-5 form-styling"
+        className="d-flex flex-column m-5 flex-wrap align-items-center form-styling"
         onSubmit={handleSubmit}
       >
         <label>
-          First Name:
+          First Name:&nbsp;&nbsp;
           <input
             type="text"
             name="name"
@@ -56,7 +57,7 @@ export default function Forms({ addContact }) {
           />
         </label>
         <label>
-          Last Name:
+          Last Name:&nbsp;&nbsp;
           <input
             type="text"
             name="surname"
@@ -67,7 +68,7 @@ export default function Forms({ addContact }) {
           />
         </label>
         <label>
-          Your Email:
+          Your Email:&nbsp;&nbsp;
           <input
             type="email"
             name="email"
@@ -78,7 +79,7 @@ export default function Forms({ addContact }) {
           />
         </label>
         <label>
-          Birth date :
+          Birth date:&nbsp;&nbsp;
           <input
             type="date"
             id="birthday"
@@ -88,16 +89,17 @@ export default function Forms({ addContact }) {
             required
           />
         </label>
-        <div className="d-flex  bb">
+        <div className="d-flex button-direction">
           <button
             type="button"
             value="Reset form"
-            className="submit-button"
+            className="submit-button m-3"
+            // className="storybook-button storybook-button--primary storybook-button--large  m-3"
             onClick={reset}
           >
             Reset
           </button>
-          <button type="submit" value="Submit" className="submit-button">
+          <button type="submit" value="Submit" className="submit-button m-3">
             Submit
           </button>
         </div>
